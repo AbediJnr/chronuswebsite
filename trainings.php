@@ -104,7 +104,7 @@
 									<!--li><a href="#"><i class="icofont-google-plus"></i></a></li-->
 									<li><a href="https://x.com/ChronusSol?t=Odip_3eYnZaapua06bP4JA&s=09" target="_blank"><i class="icofont-twitter"></i></a></li>
 									<li><a href="https://www.instagram.com/chronussolutions?igsh=MWlnbW1jbnliMXZldw==" target="_blank"><i class="icofont-instagram"></i></a></li>
-									<!--li><a href="#"><i class="icofont-pinterest"></i></a></li-->
+									<li><a href="https://www.linkedin.com/company/chronussolutions/posts/?feedView=all" target="_blank"><i class="icofont-linkedin"></i></a></li>
 								</ul>
 							
 						</div>
@@ -128,7 +128,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.php"><img src="img/logo.png" alt="#"></a>
+									<a href="index.php"><img src="img/chronus-logo.jpg" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -194,13 +194,20 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="inner-content">
-							<div class="image-slider">
-								<div class="pf-details-slider">
-									<img src="img/call-bg.jpg" alt="#">
-									<img src="img/call-bg.jpg" alt="#">
-									<img src="img/call-bg.jpg" alt="#">
+						<div class="image-slider">
+							<div class="pf-details-slider">
+								<div class="slider-item">
+									<img src="img/mr-bochelly-IBKyH0V3rew-unsplash.jpg" alt="Image 2">
+								</div>
+								<div class="slider-item">
+									<img src="img/annie-spratt-QckxruozjRg-unsplash.jpg" alt="Image 1">
+								</div>
+								<div class="slider-item">
+									<img src="img/desola-lanre-ologun-IgUR1iX0mqM-unsplash.jpg" alt="Image 3">
 								</div>
 							</div>
+						</div>
+
 							<div class="date">
 								<ul>
 									<li><span>Learn with us</span> at Chronus</li>

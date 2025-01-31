@@ -102,7 +102,7 @@
 									<!--li><a href="#"><i class="icofont-google-plus"></i></a></li-->
 									<li><a href="https://x.com/ChronusSol?t=Odip_3eYnZaapua06bP4JA&s=09" target="_blank"><i class="icofont-twitter"></i></a></li>
 									<li><a href="https://www.instagram.com/chronussolutions?igsh=MWlnbW1jbnliMXZldw==" target="_blank"><i class="icofont-instagram"></i></a></li>
-									<!--li><a href="#"><i class="icofont-pinterest"></i></a></li-->
+									<li><a href="https://www.linkedin.com/company/chronussolutions/posts/?feedView=all" target="_blank"><i class="icofont-linkedin"></i></a></li>
 								</ul>
 							
 						</div>
@@ -126,7 +126,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.php"><img src="img/logo.png" alt="#"></a>
+									<a href="index.php"><img src="img/chronus-logo.jpg" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -191,38 +191,80 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
+						<p><h3>At Chronus Solutions,</h3>
+						<p>We offer a comprehensive range of services designed to meet all your IT needs. From website development to cybersecurity solutions, we have the expertise and experience to help your business thrive in today's digital landscape. </p> <br/>
 						
+						
+						<div class="services-body-text">
+							<div class="card-group">
+								<div class="card">
+									<h5>Cloud Computing Solutions</h5>
+									<p class="cutoff-text">
+										Unlock new possibilities for your business with our cloud computing solutions. Whether you're looking to migrate to the cloud or optimize your existing cloud infrastructure, we can help you leverage the power of the cloud to drive innovation and growth.
+									</p>
+									<input class="expand-btn" type="checkbox">
+								</div>
+		
+								<div class="card">
+									<h5>Website Development</h5>
+									<p class="cutoff-text">
+										Craft a compelling online presence with our expert website development services. From design and development to optimization and maintenance, we'll work with you every step of the way to create a website that reflects your brand and engages your audience.
+									</p>
+									<input class="expand-btn" type="checkbox">
+								</div>
+		
+								<div class="card">
+									<h5>Software Development</h5>
+									<p class="cutoff-text">
+										Bring your ideas to life with our custom software development solutions. Whether you need a mobile app, a web application, or a desktop software solution, our team of experienced developers will turn your vision into reality, on time and within budget.
+									</p>
+									<input class="expand-btn" type="checkbox">
+								</div>
+
+								<div class="card">
+									<h5>Managed IT Services</h5>	
+									<p class="cutoff-text">
+										Our Managed IT Services are designed to keep your systems running smoothly and efficiently. From troubleshooting and maintenance to proactive monitoring and support, we provide all the essential services you need to ensure your IT infrastructure is always up and running.
+									</p>
+									<input class="expand-btn" type="checkbox">
+								</div>
+
+								<div class="card">
+									<h5>Trainings</h5>
+									<p class="cutoff-text">
+										Empower your team with our customized training programs tailored to your specific needs. Whether you're looking to learn new software or improve your IT skills, our expert trainers will help you achieve your goals and stay ahead of the curve.
+									</p>
+									<input class="expand-btn" type="checkbox">
+								</div>
+
+								<div class="card">
+									<h5>Business Analysis/Consulting</h5>
+									<p class="cutoff-text">
+										we specialize in business analysis and consulting services tailored to empower your organization. Our dedicated team of experts combines industry experience with innovative strategies to drive efficiency, optimize processes, and accelerate growth.
+									</p>
+									<input class="expand-btn" type="checkbox">
+								</div>
+															
+								<div class="card">
+									<h5>Strategic Initiatives</h5>
+									<p class="cutoff-text">
+										At Chronus Solutions, we're committed to giving back to the community. That's why we offer free IT services for non-profits and charitable organizations. This initiative serves as both a portfolio and a testing ground for our capabilities. By supporting these organizations, we generate exposure, referrals, and leads, all while making a positive difference in the world.
+									</p>
+									<input class="expand-btn" type="checkbox">
+								</div>
+								
+								<div class="card">
+									<h5>Cybersecurity Solutions</h5>
+									<p class="cutoff-text">
+										Protect your valuable assets with our comprehensive cybersecurity solutions. From antivirus software to firewall protection, we have everything you need to keep your data safe and secure from cyber threats.
+									</p>
+									<input class="expand-btn" type="checkbox">
+								</div>
+							</div>
 							
-							
-							<div class="body-text">
-								<p><h3>At Chronus Solutions,</h3>
-								<p>We offer a comprehensive range of services designed to meet all your IT needs. From website development to cybersecurity solutions, we have the expertise and experience to help your business thrive in today's digital landscape. </p> <br/>
-								
-								<p><h5>Managed IT Services</h5>
-								Our Managed IT Services are designed to keep your systems running smoothly and efficiently. From troubleshooting and maintenance to proactive monitoring and support, we provide all the essential services you need to ensure your IT infrastructure is always up and running.</p><br/>
-								
-								<p><h5>Trainings</h5>
-								Empower your team with our customized training programs tailored to your specific needs. Whether you're looking to learn new software or improve your IT skills, our expert trainers will help you achieve your goals and stay ahead of the curve.</p><br/>
-								
-								<p><h5>Cybersecurity Solutions</h5>
-								Protect your valuable assets with our comprehensive cybersecurity solutions. From antivirus software to firewall protection, we have everything you need to keep your data safe and secure from cyber threats.</p><br/>
-								
-								<p><h5>Cloud Computing Solutions</h5>
-								Unlock new possibilities for your business with our cloud computing solutions. Whether you're looking to migrate to the cloud or optimize your existing cloud infrastructure, we can help you leverage the power of the cloud to drive innovation and growth.</p><br/>
-								
-								<p><h5>Website Development</h5>
-								Craft a compelling online presence with our expert website development services. From design and development to optimization and maintenance, we'll work with you every step of the way to create a website that reflects your brand and engages your audience.</p><br/>
-								
-								<p><h5>Software Development</h5>
-								Bring your ideas to life with our custom software development solutions. Whether you need a mobile app, a web application, or a desktop software solution, our team of experienced developers will turn your vision into reality, on time and within budget.</p><br/>
-								
-								<p><h5>Strategic Initiatives</h5>
-								At Chronus Solutions, we're committed to giving back to the community. That's why we offer free IT services for non-profits and charitable organizations. This initiative serves as both a portfolio and a testing ground for our capabilities. By supporting these organizations, we generate exposure, referrals, and leads, all while making a positive difference in the world.</p><br/>
-								
-								<p><h5>Business Analysis/Consulting</h5>
-								we specialize in business analysis and consulting services tailored to empower your organization. Our dedicated team of experts combines industry experience with innovative strategies to drive efficiency, optimize processes, and accelerate growth.</p><br/>
-								
-							
+							<div class="services-apply-btn-container">
+								<a href="/contact" id="apply-btn">APPLY FOR OUR SERVICES</a>
+							</div> 
 						</div>
 					</div>
 				</div>

@@ -102,7 +102,7 @@
 									<!--li><a href="#"><i class="icofont-google-plus"></i></a></li-->
 									<li><a href="https://x.com/ChronusSol?t=Odip_3eYnZaapua06bP4JA&s=09" target="_blank"><i class="icofont-twitter"></i></a></li>
 									<li><a href="https://www.instagram.com/chronussolutions?igsh=MWlnbW1jbnliMXZldw==" target="_blank"><i class="icofont-instagram"></i></a></li>
-									<!--li><a href="#"><i class="icofont-pinterest"></i></a></li-->
+									<li><a href="https://www.linkedin.com/company/chronussolutions/posts/?feedView=all" target="_blank"><i class="icofont-linkedin"></i></a></li>
 								</ul>
 							
 						</div>
@@ -126,7 +126,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="../index.php"><img src="../img/logo.png" alt="#"></a>
+									<a href="../index.php"><img src="../img/chronus-logo.jpg" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -194,7 +194,7 @@
 					<div class="row"> 
 						<div class="col-lg-6">
 							<div class="contact-us-left">
-							    <img src="mailer.png" style="display: block; margin-left: auto; margin-right: auto; display: flex; align-items: center;">
+							    <img src="/img/vecteezy_latterbox-mail-message-3d-cute-shop-customer-icon-for-social_24108669.png" style="display: block; margin-left: auto; margin-right: auto; display: flex; align-items: center;">
 								<!--Start Google-map >
 								<div id="myMap"></div>
 								<!--/End Google-map -->

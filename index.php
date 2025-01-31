@@ -154,7 +154,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h5>Our commitment extends beyond commercial projects,<br/> We believe in giving back to the community.</h5>
-							<img src="img/section-img.png" alt="#">
+							<!-- <img src="img/icons8-rhombus-48.png" alt="#"> -->
 							<p>That’s why we offer free IT services to Non-profits and Charitable Organizations. By doing so, we not only act as a portfolio and testing ground but also contribute to causes that matter.</p>
 						</div>
 					</div>
@@ -258,7 +258,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 						<h5>At Chronus Solution Services, we are passionate about providing top-notch IT support and development services.</h5>
-							<img src="img/section-img.png" alt="#">
+							<!-- <img src="img/icons8-rhombus-48.png" alt="#"> -->
 							<p>Our expertise spans across various domains with a team comprising dedicated professionals including Project Managers, Scrum Masters, Business Analysts, Product Owners, Data Analysts, Human Resources specialists, and User Experience researchers.</p>
 						</div>
 					</div>
@@ -350,7 +350,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h5>At Chronus Solutions, we pride ourselves on delivering exceptional service. </h5>
-							<img src="img/section-img.png" alt="#">
+							<!-- <img src="img/section-img.png" alt="#"> -->
 							<p>Our key services  include:</p>
 						</div>
 					</div>
@@ -466,7 +466,7 @@
 					<div class="col-lg-12">
 						<div class="section-title">
 							<h3>We Are Always Ready to Work With You. </h3>
-							<br/><img src="img/section-img.png" alt="#"><br/>
+							<!-- <br/><img src="img/section-img.png" alt="#"><br/> -->
 						    <div class="get-quote">
 									<a href="contact/" class="btn">Contact Us Now</a>
 							</div>
