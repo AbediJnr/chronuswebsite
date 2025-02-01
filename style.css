@@ -604,7 +604,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(38, 38, 154, 0.5), rgba(152, 152, 253, 0.5));
+    background: linear-gradient(rgba(154, 205, 50, 0.25), rgba(120, 157, 45, 0.25));
     z-index: 1;
 }
 
@@ -1251,7 +1251,7 @@ body{
 }
 .pf-details .image-slider{
 	border-radius:8px 8px 0 0;
-	background: linear-gradient(rgba(38, 38, 154, 0.5), rgba(152, 152, 253, 0.5));
+	background: linear-gradient(rgba(154, 205, 50, 0.25), rgba(120, 157, 45, 0.25));
 }
 .pf-details .image-slider img{
 	height:100%;
@@ -1520,11 +1520,6 @@ body{
 	cursor: pointer;
 	margin-top: 1rem;
 }
-ul{
-	list-style:circle;
-	list-style-type: circle;
-	list-style-position: inside;
-}
 .expand-btn:hover{
 	color: #000;
 	background-color: white;
@@ -1555,6 +1550,51 @@ ul{
 /*=========================
 	End service CSS
 ===========================*/
+
+/* Projects */
+/* Basic styling for the project card */
+.project-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    border-radius: 8px;
+    width: 300px;
+    transition: all 0.3s ease;
+}
+
+/* Hide the achievements section by default */
+.project-card .achievements {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Styling the checkbox input (hidden) */
+.expand-btn {
+    display: none;
+}
+
+/* Label to simulate a button for expanding/collapsing */
+.expand-label {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* When the checkbox is checked, show the achievements */
+.expand-btn:checked + .expand-label + h2 + p + .achievements {
+    display: block;  /* Makes the achievements visible when the checkbox is checked */
+}
+
+/* Optional: Change label text when the card is expanded */
+.expand-btn:checked + .expand-label {
+    background-color: #f44336;
+}
 
 /*=============================
 	Start Testimonials CSS

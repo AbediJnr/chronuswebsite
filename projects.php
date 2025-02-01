@@ -175,7 +175,8 @@
                 "Improved accessibility made the website mobile-friendly and easier to navigate, helping clients find what they need 25% faster.",
                 "Better service added self-service tools and live chat, speeding up response times by 50% and boosting satisfaction.",
                 "Stronger online presence enhanced SEO and analytics, driving 35% more traffic and providing insights to improve services."
-            ]
+            ],
+            "checkbox" => '<input class="learn-more-btn" type="checkbox">', 
             ],
             [
             "title" => "Project Uche",
@@ -311,32 +312,59 @@
                                        </div>
 
                                     <!-- Project Overview -->   
-                                        <div class="news-text">
+                                        <!-- <div class="news-text">
                                             <h6>Project Overview:</h6>
                                             <p><?= $project['overview']; ?></p>
-                                        </div>
+                                        </div> -->
 
-                                        <!-- Key Achievements -->
                                         <?php 
-                                            echo '<style>
-                                                    ul {
-                                                    	list-style:circle;
-                                                    }
-                                                    li {
-                                                        line-height: 2; 
-                                                        margin-bottom: 10px; 
-                                                    }
-                                                </style>';
-
                                             // foreach ($projects as $project) {
-                                                echo "<h6>Key Achievements:</h6>";
+                                                echo '<div class="project-card">';
+                                                echo $project['checkbox']; // The checkbox input
+                                                echo "<label for='project1' class='expand-label'>Expand</label>"; // The label to toggle the checkbox
+                                                echo "<h2>" . $project['title'] . "</h2>";
+                                                echo "<p>Status: " . $project['status'] . "</p>";
+                                                echo "<p>Date: " . $project['date'] . "</p>";
+                                                echo "<p>Overview: " . $project['overview'] . "</p>";
+
+                                                echo "<div class='achievements'>";
+                                                echo "<h3>Key Achievements:</h3>";
                                                 echo "<ul>";
                                                 foreach ($project['achievements'] as $achievement) {
                                                     echo "<li>" . $achievement . "</li>";
                                                 }
                                                 echo "</ul>";
-                                            // }
+                                                echo "</div>";  // End of achievements
+
+                                                echo '</div>'; // End of project-card
+                                                // }
                                         ?>
+
+                                        
+                                        <!-- Key Achievements -->
+                                        <!-- <?php 
+                                            
+                                            echo '<style>
+                                            ul {
+                                                list-style:circle;
+                                                }
+                                                    li {
+                                                        line-height: 2; 
+                                                        margin-bottom: 10px; 
+                                                        }
+                                                        </style>';
+                                                        
+                                                        // foreach ($projects as $project) {
+                                                            echo "<h6>Key Achievements:</h6>";
+                                                echo "<ul>";
+                                                foreach ($project['achievements'] as $achievement) {
+                                                    echo "<li>" . $achievement . "</li>";
+                                                }
+                                                echo "</ul>";
+
+                                                echo "<p>" . $project['checkbox'] . "</p>"; 
+                                            // }
+                                        ?> -->
 
 
                                         <!-- Conditional Join Button -->
