@@ -176,7 +176,6 @@
                 "Better service added self-service tools and live chat, speeding up response times by 50% and boosting satisfaction.",
                 "Stronger online presence enhanced SEO and analytics, driving 35% more traffic and providing insights to improve services."
             ],
-            "checkbox" => '<input class="learn-more-btn" type="checkbox">', 
             ],
             [
             "title" => "Project Uche",
@@ -273,129 +272,95 @@
             ]
         ?>
 
-        <section class="news-single section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-12">
-                        <?php foreach ($projects as $project): ?>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="single-main">
-                                    <!-- Project Title -->
-                                        <h1 class="news-title">
-                                            <a href="#"><?= $project['title']; ?></a>
-                                        </h1>
-                                    <!-- Meta Information -->
-                                       <div class="meta">
-                                            <div class="meta-left">
-                                                <span class="date">
-                                                    <i class="fa fa-clock-o"></i> Commenced: <?= $project['date']; ?>
-                                                </span>
+<section class="news-single section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-12">
+                <?php foreach ($projects as $project): ?>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="single-main">
+                                <!-- Project Title -->
+                                <h1 class="news-title">
+                                    <a href="#"><?= $project['title']; ?></a>
+                                </h1>
+
+                                <!-- Meta Information -->
+                                <div class="meta">
+                                    <div class="meta-left">
+                                        <span class="date">
+                                            <i class="fa fa-clock-o"></i> Commenced: <?= $project['date']; ?>
+                                        </span>
+                                    </div>
+                                    <div class="meta-right" style="margin-top: 10px;">
+                                        <h6>Status:</h6>
+                                        <?php if ($project['status'] == 'completed'): ?>
+                                            <i class="fa fa-check-circle fa-2x" style="color: green;"></i> Completed
+                                        <?php else: ?>
+                                            <div class="progress" style="padding: 20px 30px;">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                                    role="progressbar" 
+                                                    style="width: <?= $project['progress']; ?>%; color: black;" 
+                                                    aria-valuenow="<?= $project['progress']; ?>" 
+                                                    aria-valuemin="0" 
+                                                    aria-valuemax="100">
+                                                    <?= $project['progress']; ?>% Complete
+                                                </div>
                                             </div>
-                                            <div class="meta-right" style="margin-top: 10px;">
-                                                <h6>Status:</h6>
-                                                <?php if ($project['status'] == 'completed'): ?>
-                                                    <i class="fa fa-check-circle fa-2x" style="color: green;"></i> Completed
-                                                <?php else: ?>
-                                                    <div class="progress" style="padding: 20px 30px;">
-                                                        <div class="progress-bar progress-bar-striped progress-bar-animated" 
-                                                            role="progressbar" 
-                                                            style="color:black; <?= $project['progress']; ?>%;" 
-                                                            aria-valuenow="<?= $project['progress']; ?>" 
-                                                            aria-valuemin="0" 
-                                                            aria-valuemax="100">
-                                                            <?= $project['progress']; ?>% Complete
-                                                        </div>
-                                                    </div>
-                                                <?php endif; ?>
-                                            </div>
-                                       </div>
-
-                                    <!-- Project Overview -->   
-                                        <!-- <div class="news-text">
-                                            <h6>Project Overview:</h6>
-                                            <p><?= $project['overview']; ?></p>
-                                        </div> -->
-
-                                        <?php 
-                                            // foreach ($projects as $project) {
-                                                echo '<div class="project-card">';
-                                                echo $project['checkbox']; // The checkbox input
-                                                echo "<label for='project1' class='expand-label'>Expand</label>"; // The label to toggle the checkbox
-                                                echo "<h2>" . $project['title'] . "</h2>";
-                                                echo "<p>Status: " . $project['status'] . "</p>";
-                                                echo "<p>Date: " . $project['date'] . "</p>";
-                                                echo "<p>Overview: " . $project['overview'] . "</p>";
-
-                                                echo "<div class='achievements'>";
-                                                echo "<h3>Key Achievements:</h3>";
-                                                echo "<ul>";
-                                                foreach ($project['achievements'] as $achievement) {
-                                                    echo "<li>" . $achievement . "</li>";
-                                                }
-                                                echo "</ul>";
-                                                echo "</div>";  // End of achievements
-
-                                                echo '</div>'; // End of project-card
-                                                // }
-                                        ?>
-
-                                        
-                                        <!-- Key Achievements -->
-                                        <!-- <?php 
-                                            
-                                            echo '<style>
-                                            ul {
-                                                list-style:circle;
-                                                }
-                                                    li {
-                                                        line-height: 2; 
-                                                        margin-bottom: 10px; 
-                                                        }
-                                                        </style>';
-                                                        
-                                                        // foreach ($projects as $project) {
-                                                            echo "<h6>Key Achievements:</h6>";
-                                                echo "<ul>";
-                                                foreach ($project['achievements'] as $achievement) {
-                                                    echo "<li>" . $achievement . "</li>";
-                                                }
-                                                echo "</ul>";
-
-                                                echo "<p>" . $project['checkbox'] . "</p>"; 
-                                            // }
-                                        ?> -->
-
-
-                                        <!-- Conditional Join Button -->
-                                        <?php if ($project['status'] != 'completed'): ?>
-                                            <a href="contact/" class="btn">Join the Project</a>
                                         <?php endif; ?>
                                     </div>
                                 </div>
-                            </div>
-                            <br/>
-                        <?php endforeach; ?>
-                    </div>
-                    <div class="col-lg-4 col-12">
-                        <!-- Sidebar -->
-                        <div class="main-sidebar">
-                            <!-- Categories Widget -->
-                            <div class="single-widget category">
-                                <h3 class="title">Project Categories</h3>
-                                <ul class="categor-list">
-                                    <li><a href="#">Non-profit and Charities</a></li>
-                                    <li><a href="#">Environmental Sustainability</a></li>
-                                    <li><a href="#">Website Development</a></li>
-                                    <li><a href="#">Training and Education</a></li>
-                                    <li><a href="#">Sales and Marketing</a></li>
-                                </ul>
+
+                                <!-- Project Overview -->
+                                <div class="news-text">
+                                    <h6>Project Overview:</h6>
+                                    <p><?= $project['overview']; ?></p>
+                                </div>
+
+                                <!-- Key Achievements -->
+                                <?php if (!empty($project['achievements'])): ?>
+                                    <h6>Key Achievements:</h6>
+                                    <ol class="key-achievements">
+                                        <?php foreach ($project['achievements'] as $achievement): ?>
+                                            <li><?php echo $achievement; ?></li>
+                                        <?php endforeach; ?>
+                                    </ol>
+
+                                    <!-- Expand/Collapse Button -->
+                                    <input class="expand-label-btn" type="checkbox" id="expand-<?= $project['title']; ?>">
+                                <?php endif; ?>
+
+
+                                <!-- Conditional Join Button -->
+                                <?php if ($project['status'] != 'completed'): ?>
+                                    <a href="contact/" class="btn" style="color: white" >Join the Project</a>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
+                    <br/>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4 col-12">
+                <div class="main-sidebar">
+                    <!-- Categories Widget -->
+                    <div class="single-widget category">
+                        <h3 class="title">Project Categories</h3>
+                        <ul class="categor-list">
+                            <li><a href="#">Non-profit and Charities</a></li>
+                            <li><a href="#">Environmental Sustainability</a></li>
+                            <li><a href="#">Website Development</a></li>
+                            <li><a href="#">Training and Education</a></li>
+                            <li><a href="#">Sales and Marketing</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 		
 		<!-- End Projects Details Area -->
 		

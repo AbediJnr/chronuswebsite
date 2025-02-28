@@ -1294,7 +1294,6 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(154, 205, 50, 0.25), rgba(120, 157, 45, 0.25));
     z-index: 1; 
 }
 .slider-item img {
@@ -1328,12 +1327,6 @@ body{
 	margin-right:5px;
 }
 .pf-details .body-text{}
-.pf-details .body-text h3 {
-	font-size: 30px;
-	font-weight: 600;
-	color: #333;
-	margin-top: 40px;
-}
 .pf-details .body-text p{
 	margin-top:20px;
 }
@@ -1371,6 +1364,82 @@ body{
 	border-color:transparent;
 	background:#9acd32;
 }
+.training-section h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 50px;
+}
+
+.training-container {
+    display: flex;
+    flex-wrap: wrap; 
+	margin-bottom: 50px;
+}
+
+.training {
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(25%); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.training:hover{
+	background: black;
+}
+
+.training img {
+    width: 100%;
+    height: 50vh;
+}
+
+.training h3 {
+	font-size: 20px;
+    margin: 15px 0 5px;
+	transition: color 0.3s ease-in-out;
+}
+
+.training p {
+	font-size: 16px;
+    color: black;
+	transition: color 0.3s ease-in-out;
+}
+
+.training button {
+    background-color: #9acd32;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+	margin-bottom: 10px;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.training:hover {
+    background-color: #9acd32;
+}
+
+.training:hover h3 {
+    color: white;
+}
+
+.training:hover p {
+    color: white;
+}
+
+.training:hover button {
+    background-color: white;
+    color: #9acd32;
+    border: 1px solid #9acd32;
+}
+
 
 /*==========================
 	End Portfolio CSS
@@ -1475,21 +1544,24 @@ body{
 .services-body-text{
 	width: 100%;
 }
-.card-group{
+.card-deck{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	gap: .5rem;
 	align-items: flex-start;
 	padding: 20px;
 }
 .card{
-	background: #9acd32;
+	background: #fff;
 	padding: 1rem;
-	border: 1px solid white;
+	border: 1px solid black;
 	border-radius: .25em;
 }
+.card h5{
+	color: #9acd32 !important;
+}
 .cutoff-text{
-	--max-lines: 3 ;
+	--max-lines: 1 ;
 	--line-height: 1.4;
 
 	max-height: calc(var(--max-lines) * 1em * var(--line-height));
@@ -1497,7 +1569,7 @@ body{
 	overflow: hidden;
 	position: relative;
 	text-align: justify;
-	color: white;
+	color: #000;
 }
 .cutoff-text::before{
 	content: "";
@@ -1507,28 +1579,29 @@ body{
 	bottom: 0;
 	pointer-events: none;
 }
-.cutoff-text:has(+ .expand-btn:checked){
+.cutoff-text:has(+ .services-learn-more-btn:checked){
 	max-height: none;
 }
-.expand-btn{
+.services-learn-more-btn{
 	appearance: none;
-	border: 1px solid black;
+	background-color: #9acd32;
+	border: 1px solid #9acd32;
 	color: white;
 	border-radius: .25em;
-	width: 23%;
+	max-width: 50%;
 	text-align: center;
 	cursor: pointer;
 	margin-top: 1rem;
 }
-.expand-btn:hover{
+.services-learn-more-btn:hover{
 	color: #000;
 	background-color: white;
 }
-.expand-btn::before{
-	content: "Expand";
+.services-learn-more-btn::before{
+	content: "Learn-More";
 }
-.expand-btn:checked::before{
-	content: "Collapse";
+.services-learn-more-btn:checked::before{
+	content: "Close";
 }
 .services-apply-btn-container{
 	margin-top: 30px;
@@ -1543,58 +1616,86 @@ body{
 	color: white;
 }
 #apply-btn:hover{
-	background-color: #789d2d;
+	background-color: white;
+	color: black;
+	border: 1px solid black;
 }
+
 
 
 /*=========================
 	End service CSS
 ===========================*/
 
-/* Projects */
-/* Basic styling for the project card */
-.project-card {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    border-radius: 8px;
-    width: 300px;
-    transition: all 0.3s ease;
+/*=========================
+	Start Projects CSS
+===========================*/
+
+.key-achievements li {
+	line-height: 2;
+	margin-bottom: 10px;
 }
 
-/* Hide the achievements section by default */
-.project-card .achievements {
-    display: none;
-    margin-top: 10px;
+.key-achievements {
+    --max-lines: 3; 
+    --line-height: 1.4;
+
+    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+    line-height: var(--line-height);
+    overflow: hidden;
+    position: relative;
+    text-align: justify;
+    color: black; 
+	margin-left: 20px;
+    list-style-type: decimal; 
 }
 
-/* Styling the checkbox input (hidden) */
-.expand-btn {
-    display: none;
+.key-achievements::before {
+    content: "";
+    position: absolute;
+    height: calc(1em * var(--line-height));
+    width: 100%;
+    bottom: 0;
+    background: linear-gradient(to bottom, transparent, white); 
+    pointer-events: none;
 }
 
-/* Label to simulate a button for expanding/collapsing */
-.expand-label {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #4CAF50;
+.key-achievements:has(+ .expand-label-btn:checked) {
+    max-height: none; 
+}
+
+.expand-label-btn {
+    appearance: none;
+    background-color: #000;
+    border: 1px solid #000;
     color: white;
-    cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.25em;
+    width: 23%;
+	min-width: 100px;
     text-align: center;
+    cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.5rem;
 }
 
-/* When the checkbox is checked, show the achievements */
-.expand-btn:checked + .expand-label + h2 + p + .achievements {
-    display: block;  /* Makes the achievements visible when the checkbox is checked */
+.expand-label-btn:hover {
+    color: #fff;
+    border: 1px solid #9acd32;
+    background-color: #9acd32;
 }
 
-/* Optional: Change label text when the card is expanded */
-.expand-btn:checked + .expand-label {
-    background-color: #f44336;
+.expand-label-btn::before {
+    content: "Learn More";
 }
+
+.expand-label-btn:checked::before {
+    content: "Close";
+}
+
+
+/*=========================
+	End Projets CSS
+===========================*/
 
 /*=============================
 	Start Testimonials CSS
@@ -3600,7 +3701,6 @@ body{
 	width: 100%;
 	height: 50px;
 	border: 1px solid #eee;
-	text-transform: capitalize;
 	padding: 0px 18px;
 	color: #555;
 	font-size: 14px;
@@ -3611,7 +3711,6 @@ body{
 	width: 100%;
 	height:100px;
 	border: 1px solid #eee;
-	text-transform: capitalize;
 	padding:18px;
 	color: #555;
 	font-size: 14px;
@@ -3692,9 +3791,11 @@ body{
 	margin-top:50px;
 }
 .contact-us .single-info {
-	background: #9acd32;
+	background: white;
+	color: #000 !important;
 	padding: 40px 60px;
 	height: 150px;
+	border:1px solid #000;
 	border-radius: 10px;
 	position:relative;
 	-webkit-transition: all .3s ease-out 0s;
@@ -3702,6 +3803,7 @@ body{
     -ms-transition: all .3s ease-out 0s;
     -o-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
+	margin-bottom: 20px;
 }
 .contact-us .single-info:before{
 	position: absolute;
@@ -3711,9 +3813,9 @@ body{
     left: 0;
     right: 0;
     margin: 0 auto;
-    width: 80%;
-    height: 90%;
-    background:#9acd32;
+    width: 40%;
+    height: 40%;
+    background:#000;
     opacity: 0;
     filter: blur(10px);
     -webkit-transition: all .3s ease-out 0s;
@@ -3727,10 +3829,17 @@ body{
 }
 .contact-us .single-info:hover{
 	transform: translateY(-5px);
+	background-color: #9acd32;
 }
 .contact-us .single-info i{
 	font-size:42px;
-	color:#fff;
+	color:#000;
+	position:absolute;
+	left:40px;
+}
+.contact-us .single-info i:hover{
+	font-size:42px;
+	color:#000;
 	position:absolute;
 	left:40px;
 }
@@ -3738,14 +3847,23 @@ body{
 	margin-left: 45px;
 }
 .contact-us .single-info .content h3{
-	color:#fff;
+	color:#000;
 	font-size:18px;
 	font-weight:600;
-	
 }
-.contact-us .single-info .content p{
+.contact-us .single-info .content h3:hover{
 	color:#fff;
 	margin-top:5px;
+}
+.contact-us .single-info .content p{
+	color:#000;
+	margin-top:5px;
+}
+.contact-us .single-info .content p:hover{
+	color:#fff;
+	margin-top:5px;
+}
+.contact-us .contact-info .row{
 }
 /* Google Map */
 .contact-us #myMap {
@@ -4479,3 +4597,133 @@ body{
 /*=========================
 	End Footer CSS
 ===========================*/
+.contact-us .training-inner{
+	box-shadow: 10px 10px 10px #00000024;
+	border-radius: 5px;
+	overflow:hidden;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.contact-us .left-col-ba{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(154, 205, 50, 0.25), rgba(120, 157, 45, 0.25)),url(img/charlesdeluvio-Lks7vei-eAg-unsplash.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.contact-us .left-col-ba .container {
+	max-width: 600px;
+}
+
+.contact-us .training-inner .left-col-ba h1{
+	color: white;
+    text-align: center; 
+}
+
+.contact-us .training-inner .left-col-ba p{
+	color: white;
+    text-align: center; 
+}
+
+
+.contact-us .left-col-sm{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(154, 205, 50, 0.25), rgba(120, 157, 45, 0.25)),url(img/jason-goodman-Oalh2MojUuk-unsplash.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.contact-us .left-col-sm .container {
+	max-width: 600px;
+}
+
+.contact-us .training-inner .left-col-sm h1{
+	color: white;
+    text-align: center; 
+}
+
+.contact-us .training-inner .left-col-sm p{
+	color: white;
+    text-align: center; 
+}
+
+.contact-us .left-col-pm{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(154, 205, 50, 0.25), rgba(120, 157, 45, 0.25)),url(img/scott-graham-5fNmWej4tAA-unsplash\ \(1\).jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.contact-us .left-col-pm .container {
+	max-width: 600px;
+}
+
+.contact-us .training-inner .left-col-pm h1{
+	color: white;
+    text-align: center; 
+}
+
+.contact-us .training-inner .left-col-pm p{
+	color: white;
+    text-align: center; 
+}
+
+.contact-us .left-col-it{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(154, 205, 50, 0.25), rgba(120, 157, 45, 0.25)),url(img/austin-distel-mpN7xjKQ_Ns-unsplash.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.contact-us .left-col-it .container {
+	max-width: 600px;
+}
+
+.contact-us .training-inner .left-col-it h1{
+	color: white;
+    text-align: center; 
+}
+
+.contact-us .training-inner .left-col-it p{
+	color: white;
+    text-align: center; 
+}
+
+.contact-us .training-inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-us-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 20px; 
+}
+
+
+

@@ -196,13 +196,13 @@
 						
 						
 						<div class="services-body-text">
-							<div class="card-group">
+							<div class="card-deck">
 								<div class="card">
 									<h5>Cloud Computing Solutions</h5>
 									<p class="cutoff-text">
 										Unlock new possibilities for your business with our cloud computing solutions. Whether you're looking to migrate to the cloud or optimize your existing cloud infrastructure, we can help you leverage the power of the cloud to drive innovation and growth.
 									</p>
-									<input class="expand-btn" type="checkbox">
+									<input class="services-learn-more-btn" type="checkbox">
 								</div>
 		
 								<div class="card">
@@ -210,7 +210,7 @@
 									<p class="cutoff-text">
 										Craft a compelling online presence with our expert website development services. From design and development to optimization and maintenance, we'll work with you every step of the way to create a website that reflects your brand and engages your audience.
 									</p>
-									<input class="expand-btn" type="checkbox">
+									<input class="services-learn-more-btn" type="checkbox">
 								</div>
 		
 								<div class="card">
@@ -218,7 +218,7 @@
 									<p class="cutoff-text">
 										Bring your ideas to life with our custom software development solutions. Whether you need a mobile app, a web application, or a desktop software solution, our team of experienced developers will turn your vision into reality, on time and within budget.
 									</p>
-									<input class="expand-btn" type="checkbox">
+									<input class="services-learn-more-btn" type="checkbox">
 								</div>
 
 								<div class="card">
@@ -226,7 +226,7 @@
 									<p class="cutoff-text">
 										Our Managed IT Services are designed to keep your systems running smoothly and efficiently. From troubleshooting and maintenance to proactive monitoring and support, we provide all the essential services you need to ensure your IT infrastructure is always up and running.
 									</p>
-									<input class="expand-btn" type="checkbox">
+									<input class="services-learn-more-btn" type="checkbox">
 								</div>
 
 								<div class="card">
@@ -234,15 +234,15 @@
 									<p class="cutoff-text">
 										Empower your team with our customized training programs tailored to your specific needs. Whether you're looking to learn new software or improve your IT skills, our expert trainers will help you achieve your goals and stay ahead of the curve.
 									</p>
-									<input class="expand-btn" type="checkbox">
+									<input class="services-learn-more-btn" type="checkbox">
 								</div>
 
 								<div class="card">
 									<h5>Business Analysis/Consulting</h5>
 									<p class="cutoff-text">
-										we specialize in business analysis and consulting services tailored to empower your organization. Our dedicated team of experts combines industry experience with innovative strategies to drive efficiency, optimize processes, and accelerate growth.
+										We specialize in business analysis and consulting services tailored to empower your organization. Our dedicated team of experts combines industry experience with innovative strategies to drive efficiency, optimize processes, and accelerate growth.
 									</p>
-									<input class="expand-btn" type="checkbox">
+									<input class="services-learn-more-btn" type="checkbox">
 								</div>
 															
 								<div class="card">
@@ -250,7 +250,7 @@
 									<p class="cutoff-text">
 										At Chronus Solutions, we're committed to giving back to the community. That's why we offer free IT services for non-profits and charitable organizations. This initiative serves as both a portfolio and a testing ground for our capabilities. By supporting these organizations, we generate exposure, referrals, and leads, all while making a positive difference in the world.
 									</p>
-									<input class="expand-btn" type="checkbox">
+									<input class="services-learn-more-btn" type="checkbox">
 								</div>
 								
 								<div class="card">
@@ -258,7 +258,7 @@
 									<p class="cutoff-text">
 										Protect your valuable assets with our comprehensive cybersecurity solutions. From antivirus software to firewall protection, we have everything you need to keep your data safe and secure from cyber threats.
 									</p>
-									<input class="expand-btn" type="checkbox">
+									<input class="services-learn-more-btn" type="checkbox">
 								</div>
 							</div>
 							

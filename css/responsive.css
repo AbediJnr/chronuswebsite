@@ -6,6 +6,13 @@ Description: Mediplus - Doctor HTML Template.
 Version:	1.1
 ========================================*/   
 /* Tablet Screen */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+	.training {
+        width: calc(50%)
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 /* Header Sticky */
 .section{
@@ -367,12 +374,9 @@ Version:	1.1
 	padding: 65px 0px;
 }
 
-
-
-
-
-
-
+.training {
+	width: calc(50%)
+}
 
 }
 /* Mobile Screen */
@@ -1024,7 +1028,9 @@ Version:	1.1
 .footer .copyright {
 	padding: 20px 0;
 }
-
+.training {
+	width: calc(100%); 
+}
 
 }
 /* Mobile Screen */
@@ -1299,10 +1305,40 @@ Version:	1.1
 .footer .footer-top {
 	padding: 65px 0px;
 }
-
-
-
-
-
-
+.card-group {
+	display: grid;
+	grid-template-columns: 1fr; 
+	gap: 15px;
+	padding: 10px;
 }
+
+.card {
+	width: 100%;
+	max-width: 100%;
+}
+
+.card h5 {
+	font-size: 16px;
+}
+
+.card p {
+	font-size: 14px;
+}
+
+.services-apply-btn-container {
+	max-width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#apply-btn {
+	width: 90%; 
+	padding: 14px;
+	font-size: 16px;
+}
+
+.training {
+	width: calc(100%); 
+}
+}
+

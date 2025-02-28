@@ -138,7 +138,7 @@
 								<div class="main-menu">
 									<nav class="navigation">
 										<ul class="nav menu">
-											<li class="active"><a href="../index.php">Home</a>
+											<li class=""><a href="../index.php">Home</a>
 												<!--ul class="dropdown">
 													<li><a href="#">Welcome</a></li>
 												</ul-->
@@ -197,19 +197,19 @@
 							    <img src="/img/vecteezy_latterbox-mail-message-3d-cute-shop-customer-icon-for-social_24108669.png" style="display: block; margin-left: auto; margin-right: auto; display: flex; align-items: center;">
 								<!--Start Google-map >
 								<div id="myMap"></div>
-								<!--/End Google-map -->
+								/End Google-map -->
 							</div>
 						</div>
 						<div class="col-lg-6">
 						    
 						    <div id="success_message" style="width:100%; height:100%; display:none; color:green; text-align:center; padding: 50px 0;"> <img src="green_tick.png"> <br/><br/><h5>Thank you for reaching out to us, we recieved your message.<br/><br/> One of our representatives will get back to you soon.</h5> </div>
-                    <div id="error_message" style="width:100%; height:100%; display:none; color:red; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                    		<div id="error_message" style="width:100%; height:100%; display:none; color:red; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
 							<div class="contact-us-form">
 							    
 								<h2>Contact Us Now</h2>
 								<p>Kindly fill the form below with your concise message. Thank you</p>
 								<!-- Form -->
-								<form class="form" method="post" id="reused_form" >
+								<form class="form" method="post" action="send_email.php" id="reused_form">
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
@@ -251,30 +251,47 @@
 						</div>
 					</div>
 				</div>
+				
 				<div class="contact-info">
 					<div class="row">
 						<!-- single-info -->
-						<div class="col-lg-4 col-12 ">
+						<a href="tel:01914682906" class="col-md-6 col-12 full-link">
 							<div class="single-info">
 								<i class="icofont icofont-ui-call"></i>
 								<div class="content">
+									<h3>Click on number to call us:</h3>
+									<p>01914682906</p>
+								</div>
+							</div>
+						</a>
+						<!--/End single-info -->
+
+						<!-- single-info -->
+						<a href="mailto:info@chronussolutions.co.uk" class="col-md-6 col-12 full-link">
+							<div class="single-info">
+								<i class="icofont icofont-ui-email"></i>
+								<div class="content">
+									<h3>Click on email to contact us:</h3>
 									<p>info@chronussolutions.co.uk</p>
 								</div>
 							</div>
-						</div>
+						</a>
 						<!--/End single-info -->
+
 						<!-- single-info -->
-						<div class="col-lg-4 col-12 ">
+						<a href="https://maps.app.goo.gl/vDNnbqMPiMjQ2NS1A" target="_blank" class="col-md-6 col-12 full-link">
 							<div class="single-info">
 								<i class="icofont-google-map"></i>
 								<div class="content">
+									<h3>Click on location to locate us:</h3>
 									<p>Newcastle Upon Tyne, United Kingdom</p>
 								</div>
 							</div>
-						</div>
+						</a>
 						<!--/End single-info -->
-						<!-- single-info -->
-						<div class="col-lg-4 col-12 ">
+
+						<!-- single-info  -->
+						<div class="col-md-6 col-12">
 							<div class="single-info">
 								<i class="icofont icofont-wall-clock"></i>
 								<div class="content">
@@ -287,7 +304,36 @@
 						<!--/End single-info -->
 					</div>
 				</div>
+
+
+				</div>
 			</div>
 		</section>
 		<!--/ End Contact Us -->
 <?php include 'ft.html'; ?>
+
+<script>
+	$(document).ready(function() {
+    $('#reused_form').on('submit', function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: 'send_email.php',
+            data: $(this).serialize(),
+            success: function(response) {
+                if (response === "Thank You! Your message has been sent.") {
+                    $('#success_message').show();
+                    $('#error_message').hide();
+                } else {
+                    $('#error_message').html(response).show();
+                    $('#success_message').hide();
+                }
+            },
+            error: function() {
+                $('#error_message').html("Oops! Something went wrong, and we couldn't send your message.").show();
+                $('#success_message').hide();
+            }
+        });
+    });
+});
+</script>

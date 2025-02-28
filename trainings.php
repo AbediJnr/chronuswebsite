@@ -200,7 +200,7 @@
 									<img src="img/mr-bochelly-IBKyH0V3rew-unsplash.jpg" alt="Image 2">
 								</div>
 								<div class="slider-item">
-									<img src="img/annie-spratt-QckxruozjRg-unsplash.jpg" alt="Image 1">
+									<img src="img/brooke-cagle-g1Kr4Ozfoac-unsplash (1).jpg" alt="Image 1">
 								</div>
 								<div class="slider-item">
 									<img src="img/desola-lanre-ologun-IgUR1iX0mqM-unsplash.jpg" alt="Image 3">
@@ -214,27 +214,58 @@
 									
 								</ul>
 							</div>
-							<div class="body-text">
-								<h3>There are no scheduled trainings at the moment.</h3>
-								<p>
-								    
-								    
-								</p>
-								<div class="share">
-								    
-								   
-									<h6>If you wish to be contacted once training is available, <a href="contact/"><u>click here to drop a message for us.</u></a> Thank you</h6> 
-									<!--form method="post">
-									    <input name="email" id="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
-										onblur="this.placeholder = 'Your email address'" required="" type="email">
-									    <button class="button"><i class="icofont icofont-paper-plane">Submit</i></button>
-								    </form-->
-								    
-								</div>
+
+								
+							<div class="share">
+								
+								
+								<!-- <h6>If you wish to be contacted once training is available, <a href="contact/"><u>click here to drop a message for us.</u></a> Thank you</h6>  -->
+								<!--form method="post">
+									<input name="email" id="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+									onblur="this.placeholder = 'Your email address'" required="" type="email">
+									<button class="button"><i class="icofont icofont-paper-plane">Submit</i></button>
+								</form-->
+								
+							</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+
+		<section class="training-section">
+			<h1>Available Trainings</h1>
+			<div class="training-container">
+				
+				<div class="training">
+					<img src="img/charlesdeluvio-Lks7vei-eAg-unsplash.jpg" alt="Artificial Intelligence">
+					<h3>Business Analyst</h3>
+					<p>Be a Business Analyst in just 16 weeks</p>
+					<button><a href="contact/ba-contact.php" class="enroll-btn">Enroll Now</a></button>
+				</div>
+
+				<div class="training">
+					<img src="img/scott-graham-5fNmWej4tAA-unsplash (1).jpg" alt="Cybersecurity">
+					<h3>Project Management</h3>
+					<p>Break into Project Management in 16 weeks.</p>
+					<button><a href="contact/pm-contact.php" class="enroll-btn">Enroll Now</a></button>
+				</div>
+
+				<div class="training">
+					<img src="img/austin-distel-mpN7xjKQ_Ns-unsplash.jpg" alt="Digital Marketing">
+					<h3>IT Software Applications</h3>
+					<p>Master IT Software Applications in 16 weeks</p>
+					<button><a href="contact/it-contact.php" class="enroll-btn">Enroll Now</a></button>
+				</div>
+
+				<div class="training">
+					<img src="img/jason-goodman-Oalh2MojUuk-unsplash.jpg" alt="Digital Marketing">
+					<h3>Scrum Master</h3>
+					<p>Become a Scrum Master in 16 weeks</p>
+					<button><a href="contact/sm-contact.php" class="enroll-btn">Enroll Now</a></button>
+				</div>
+
 			</div>
 		</section>
 		<!-- End Portfolio Details Area -->
