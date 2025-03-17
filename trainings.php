@@ -262,7 +262,7 @@
 				<div class="training">
 					<img src="img/jason-goodman-Oalh2MojUuk-unsplash.jpg" alt="Digital Marketing">
 					<h3>Scrum Master</h3>
-					<p>Become a Scrum Master in 16 weeks</p>
+					<p>Become a Professional Scrum Master(PSM 1) from scrum.org in 16 weeks</p>
 					<button><a href="contact/sm-contact.php" class="enroll-btn">Enroll Now</a></button>
 				</div>
 
